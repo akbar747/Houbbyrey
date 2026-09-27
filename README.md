@@ -42,3 +42,32 @@ Python 3.14 用户建议直接使用上面的 `pygame-ce` 依赖，不需要单�
 ### 游戏预览
 
 ![游戏预览](tank_preview_gameplay.png)
+## C语言烟花特效
+
+主要文件：`fireworks.c`
+
+这是一个使用 Windows 原生 API 编写的 C 语言烟花程序，不需要安装 SDL 或 OpenGL。
+
+### 编译和运行
+
+Windows 用户可以双击：
+
+```text
+build_fireworks.bat
+```
+
+也可以使用 GCC 手动编译：
+
+```powershell
+gcc fireworks.c -O2 -std=c11 -o fireworks.exe -lgdi32 -luser32 -lm -mwindows
+```
+
+### 操作方式
+
+- 鼠标左键：在鼠标位置发射烟花
+- `空格`：同时发射三枚烟花
+- `ESC`：退出
+
+### 烟花预览
+
+![烟花预览](fireworks_preview.png)
