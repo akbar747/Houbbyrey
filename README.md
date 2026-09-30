@@ -1,6 +1,6 @@
 # 我的第一个仓库🎇
 欢迎来到Github学习空间🍳！！！
-这里用来编辑我的学习过程，主要存放C语言，python练习代码，小项目与学习笔记🧑‍💻
+这里用来编辑我的学习过程，主要存放C语言，python，Java练习代码，小项目与学习笔记🧑‍💻
 持续学习，不断积累，一步一步提升自己的编程能力🛫
 
 ## 坦克大战 · 霓虹漂移版
@@ -80,3 +80,34 @@ gcc fireworks.c -O2 -std=c11 -o fireworks.exe -lgdi32 -luser32 -lm -mwindows
 运行文件：`math_toolbox/math_toolbox.exe`
 
 ![数学工具箱](math_toolbox/preview_calculator.png)
+## Java Swing 贪吃蛇
+
+项目目录：[`snake_game_java`](snake_game_java)
+
+主要文件：`snake_game_java/SnakeGame.java`
+
+这是一个用纯 Java Swing 编写的贪吃蛇游戏，不依赖任何第三方库，需要 JDK 17 或更高版本。支持转向缓冲队列、逐步加速、暂停与重开，并记录本次运行的最高分。
+
+### 编译和运行
+
+Windows 用户可以双击：
+
+```text
+snake_game_java/build_snake_game.bat
+```
+
+也可以使用 JDK 手动编译：
+
+```powershell
+javac -encoding UTF-8 -d out SnakeGame.java
+java -cp out SnakeGame
+```
+
+### 操作方式
+
+- 方向键 / `WASD`：移动
+- `空格`：开始 / 暂停
+- `回车`：重新开始
+- 鼠标点击：开始 / 暂停 / 重开
+
+提示：代码里已经调用 `enableInputMethods(false)` 关闭了输入法，所以中文输入法下 `WASD` 也能正常转向，不需要像坦克大战那样手动切换到英文输入法。
