@@ -71,3 +71,12 @@ gcc fireworks.c -O2 -std=c11 -o fireworks.exe -lgdi32 -luser32 -lm -mwindows
 ### 烟花预览
 
 ![烟花预览](fireworks_preview.png)
+## C语言数学工具箱
+
+包含普通计算器、素数、水仙花数、最大公约数和斐波那契数列。
+
+项目目录：[`math_toolbox`](math_toolbox)
+
+运行文件：`math_toolbox/math_toolbox.exe`
+
+![数学工具箱](math_toolbox/preview_calculator.png)
